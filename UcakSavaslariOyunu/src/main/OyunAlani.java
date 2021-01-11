@@ -213,13 +213,13 @@ class OyunAlani extends JPanel implements
 
         gbi.setColor(Color.BLACK);
         gbi.setFont(new Font("Consolas", Font.BOLD, 25));
-        String str = "Oyun Başlamak için       tuşuna basın";
+        String str = "Oyun Baslamak icin       tusuna basın";
         FontMetrics fm = gbi.getFontMetrics();
         gbi.drawString(str, (buff.getWidth() - fm.stringWidth(str)) / 2, 70);
         gbi.drawImage(this.tuslar[0].getGoruntu(), buff.getWidth() / 2, 35, null);
 
         int xKonum = 160, yKonum = 160;
-        str = "Ateş";
+        str = "Ates";
         gbi.drawString(str, (xKonum + fm.stringWidth(str) / 2) - 10, yKonum - 10);
         gbi.drawImage(this.tuslar[1].getGoruntu(), xKonum, yKonum, null);
         str = "Sol";
@@ -281,7 +281,7 @@ class OyunAlani extends JPanel implements
     }
 
     public void drawOyunucuOlumu(Graphics2D g2d) {
-        String msg = "OYUNU KAYBETTİNİZ...";
+        String msg = "OYUNU KAYBETTINIZ...";
         g2d.setColor(Color.BLACK);
         g2d.setFont(new Font("Consolas", Font.BOLD, 30));
         FontMetrics fm = g2d.getFontMetrics();
@@ -293,7 +293,7 @@ class OyunAlani extends JPanel implements
     }
 
     private void oyunKazandi(Graphics2D g2d) {
-        String msg = "OYUNU KAZANDINIZ TEKBİKLER ";
+        String msg = "OYUNU KAZANDINIZ TEBRIKLER ";
         g2d.setColor(Color.BLACK);
         g2d.setFont(new Font("Consolas", Font.BOLD, 30));
         FontMetrics fm = g2d.getFontMetrics();
